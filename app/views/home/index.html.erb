@@ -1,0 +1,29 @@
+
+<div class="row">
+
+    <!-- Blog Entries Column -->
+    <div class="col-md-8">
+
+        <h1 class="page-header">
+            Page Heading
+            <small>Secondary Text</small>
+        </h1>
+        
+        <!-- Mostrando os posts -->
+        <div class="infinite-table">
+            
+            <div class="teste">
+                <%= render partial:'post', collection: @posts %>
+            </div>
+            
+            <p class="pagination">
+                <%= link_to_next_page(@posts, 'Next Page', :remote => true) %>
+            </p>
+        </div>
+        
+    </div>
+
+    <%= render 'home/sides' %>
+
+</div>
+
