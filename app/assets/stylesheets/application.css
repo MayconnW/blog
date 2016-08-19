@@ -22,3 +22,26 @@ body {
 footer {
     margin: 50px 0;
 }
+
+.circle-avatar{
+	width:45px;
+	height:45px;
+	border-radius:50%;
+	border:3px solid #000;
+	z-index:5;
+	background:#000;
+	position:relative;
+}
+
+.user-image{
+	z-index:1;
+	width:45px;
+    height:45px;
+    background-position:center;
+	opacity:0.5;
+	margin-right: 10px;
+}
+
+.user-login{
+    
+}
